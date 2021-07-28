@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterControlView" customModule="MyBluckbuster" customModuleProvider="target">
+            <connections>
+                <outlet property="heightSecundaryFilterView" destination="dYV-ip-0b1" id="NtO-pA-WDs"/>
+                <outlet property="mainFilterControl" destination="2hM-D9-JsT" id="UYD-M0-aIP"/>
+                <outlet property="secundaryFilterControl" destination="Akk-oV-cMw" id="SVg-N2-tLt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ki6-Dn-Ho6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2hM-D9-JsT">
+                            <rect key="frame" x="10" y="5" width="394" height="41"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                            <connections>
+                                <action selector="mainFilterControlAction:" destination="-1" eventType="valueChanged" id="Qpf-5g-o7g"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="2hM-D9-JsT" secondAttribute="bottom" constant="5" id="By6-eR-0Nj"/>
+                        <constraint firstAttribute="trailing" secondItem="2hM-D9-JsT" secondAttribute="trailing" constant="10" id="EhM-NV-BQC"/>
+                        <constraint firstItem="2hM-D9-JsT" firstAttribute="leading" secondItem="ki6-Dn-Ho6" secondAttribute="leading" constant="10" id="qus-ac-Afr"/>
+                        <constraint firstItem="2hM-D9-JsT" firstAttribute="top" secondItem="ki6-Dn-Ho6" secondAttribute="top" constant="5" id="ufd-yp-CLq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYh-sr-V52">
+                    <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Akk-oV-cMw">
+                            <rect key="frame" x="10" y="5" width="394" height="41"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                            <connections>
+                                <action selector="secundaryFilterControlAction:" destination="-1" eventType="valueChanged" id="tLK-CT-KDd"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Akk-oV-cMw" secondAttribute="bottom" constant="5" id="1VR-pi-ys9"/>
+                        <constraint firstItem="Akk-oV-cMw" firstAttribute="top" secondItem="lYh-sr-V52" secondAttribute="top" constant="5" id="6SB-GE-RNZ"/>
+                        <constraint firstItem="Akk-oV-cMw" firstAttribute="leading" secondItem="lYh-sr-V52" secondAttribute="leading" constant="10" id="RMK-eb-w97"/>
+                        <constraint firstAttribute="height" constant="50" id="dYV-ip-0b1"/>
+                        <constraint firstAttribute="trailing" secondItem="Akk-oV-cMw" secondAttribute="trailing" constant="10" id="g9i-G5-bsA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lYh-sr-V52" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="6cy-s8-iCL"/>
+                <constraint firstItem="lYh-sr-V52" firstAttribute="top" secondItem="ki6-Dn-Ho6" secondAttribute="bottom" id="9e1-Cz-PUz"/>
+                <constraint firstItem="lYh-sr-V52" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ieg-ZF-0nR"/>
+                <constraint firstItem="ki6-Dn-Ho6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="LNb-BC-36o"/>
+                <constraint firstItem="ki6-Dn-Ho6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aU7-FB-Kvm"/>
+                <constraint firstItem="lYh-sr-V52" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="nWs-ql-VwE"/>
+                <constraint firstItem="ki6-Dn-Ho6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rdX-H6-d8o"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="111.59420289855073" y="64.955357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
