@@ -10,6 +10,8 @@ import UIKit
 class ItemOnlyImage: UICollectionViewCell {
     @IBOutlet var coverContentImage: UIImageView!
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet var rateLabel: UILabel!
+    
     private var content : Any?
     
     override init(frame: CGRect){
@@ -21,22 +23,27 @@ class ItemOnlyImage: UICollectionViewCell {
         super.init(coder: coder)
     }
     
-    func initItem(data: Any, type: TypeContent){
+    func initItem(data: Any, type: TypeContent, vote: Double){
+        self.layer.cornerRadius = 10
         self.loadingIndicator.startAnimating()
         if type == .Movie {
             self.content = data as? Movie
-            coverContentImage.downloadImage(url: "https://www.themoviedb.org/t/p/w440_and_h660_face" + (content as! Movie).poster_path, loaded: { (response) -> Void in
-                if response == true {
-                    
-                }else{
-                    
+            coverContentImage.downloadImage(url: "https://www.themoviedb.org/t/p/w440_and_h660_face" + ((content as! Movie).poster_path ?? ""), loaded: { (response) -> Void in
+                if response == false{
+                    self.coverContentImage.image = UIImage(named: "content")
                 }
-                self.loadingIndicator.stopAnimating()
                 self.loadingIndicator.isHidden = true
             })
         }else{
             self.content = data as? TV
+            coverContentImage.downloadImage(url: "https://www.themoviedb.org/t/p/w440_and_h660_face" + ((content as! TV).poster_path ?? ""), loaded: { (response) -> Void in
+                if response == false{
+                    self.coverContentImage.image = UIImage(named: "content")
+                }
+                self.loadingIndicator.isHidden = true
+            })
         }
+        rateLabel.text = "\(vote)/10"
     }
 
 }

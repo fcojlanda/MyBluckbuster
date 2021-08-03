@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B16A85C26A92A4F00A87DD8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B16A85B26A92A4F00A87DD8 /* Movie.swift */; };
 		3B16A86026A930FD00A87DD8 /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B16A85F26A930FC00A87DD8 /* TV.swift */; };
-		3B16A86226A9CC2D00A87DD8 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B16A86126A9CC2D00A87DD8 /* Content.swift */; };
+		3B2607B726B84F3900D73778 /* MovieDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2607B626B84F3900D73778 /* MovieDetailed.swift */; };
 		3B5C376026A8C34200AB2144 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C375F26A8C34200AB2144 /* AppDelegate.swift */; };
 		3B5C376726A8C34200AB2144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5C376526A8C34200AB2144 /* Main.storyboard */; };
 		3B5C376A26A8C34300AB2144 /* MyBluckbuster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C376826A8C34300AB2144 /* MyBluckbuster.xcdatamodeld */; };
@@ -18,6 +18,8 @@
 		3B5C377A26A8C34800AB2144 /* MyBluckbusterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C377926A8C34800AB2144 /* MyBluckbusterTests.swift */; };
 		3B5C378526A8C34800AB2144 /* MyBluckbusterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C378426A8C34800AB2144 /* MyBluckbusterUITests.swift */; };
 		3B5C379C26A8C53B00AB2144 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C379B26A8C53B00AB2144 /* ConnectionManager.swift */; };
+		3B999E8426B5F0B000A837EB /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B999E8326B5F0B000A837EB /* DatabaseManager.swift */; };
+		3BA7B68126B8788D00DB45B0 /* TVDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7B68026B8788D00DB45B0 /* TVDetailed.swift */; };
 		3BD2882526AFDDDD00156D45 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2882426AFDDDD00156D45 /* UIViewExtensions.swift */; };
 		3BD2882726AFDDFE00156D45 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2882626AFDDFE00156D45 /* UIImageViewExtension.swift */; };
 		3BD2882926AFE09C00156D45 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2882826AFE09C00156D45 /* MainRouter.swift */; };
@@ -51,7 +53,7 @@
 /* Begin PBXFileReference section */
 		3B16A85B26A92A4F00A87DD8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		3B16A85F26A930FC00A87DD8 /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
-		3B16A86126A9CC2D00A87DD8 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		3B2607B626B84F3900D73778 /* MovieDetailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailed.swift; sourceTree = "<group>"; };
 		3B5C375C26A8C34200AB2144 /* MyBluckbuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBluckbuster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5C375F26A8C34200AB2144 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B5C376626A8C34200AB2144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +68,8 @@
 		3B5C378426A8C34800AB2144 /* MyBluckbusterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBluckbusterUITests.swift; sourceTree = "<group>"; };
 		3B5C378626A8C34800AB2144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B5C379B26A8C53B00AB2144 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		3B999E8326B5F0B000A837EB /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		3BA7B68026B8788D00DB45B0 /* TVDetailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDetailed.swift; sourceTree = "<group>"; };
 		3BD2882426AFDDDD00156D45 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		3BD2882626AFDDFE00156D45 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		3BD2882826AFE09C00156D45 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
@@ -210,8 +214,8 @@
 		3B5C379726A8C3AF00AB2144 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				3BA7B67F26B8787200DB45B0 /* DetailedMovies&Series */,
 				3B16A85A26A92A2400A87DD8 /* Movies&Series */,
-				3B16A86126A9CC2D00A87DD8 /* Content.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -227,6 +231,7 @@
 		3B5C379926A8C4A500AB2144 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				3B999E8226B5F09300A837EB /* DatabaseManager */,
 				3BD2883A26B1000B00156D45 /* ServicesManager */,
 				3B5C379A26A8C52700AB2144 /* ConnectionManager */,
 			);
@@ -239,6 +244,23 @@
 				3B5C379B26A8C53B00AB2144 /* ConnectionManager.swift */,
 			);
 			path = ConnectionManager;
+			sourceTree = "<group>";
+		};
+		3B999E8226B5F09300A837EB /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				3B999E8326B5F0B000A837EB /* DatabaseManager.swift */,
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		3BA7B67F26B8787200DB45B0 /* DetailedMovies&Series */ = {
+			isa = PBXGroup;
+			children = (
+				3B2607B626B84F3900D73778 /* MovieDetailed.swift */,
+				3BA7B68026B8788D00DB45B0 /* TVDetailed.swift */,
+			);
+			path = "DetailedMovies&Series";
 			sourceTree = "<group>";
 		};
 		3BD2882326AFDDC300156D45 /* Extension */ = {
@@ -462,9 +484,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B999E8426B5F0B000A837EB /* DatabaseManager.swift in Sources */,
+				3B2607B726B84F3900D73778 /* MovieDetailed.swift in Sources */,
 				3BD2882B26AFE13800156D45 /* DetailedInfoVC.swift in Sources */,
 				3B5C379C26A8C53B00AB2144 /* ConnectionManager.swift in Sources */,
 				3B5C376026A8C34200AB2144 /* AppDelegate.swift in Sources */,
+				3BA7B68126B8788D00DB45B0 /* TVDetailed.swift in Sources */,
 				3B16A85C26A92A4F00A87DD8 /* Movie.swift in Sources */,
 				3BD2883626B0FBD300156D45 /* GeneralTypes.swift in Sources */,
 				3B5C376A26A8C34300AB2144 /* MyBluckbuster.xcdatamodeld in Sources */,
@@ -475,7 +500,6 @@
 				3BD2882726AFDDFE00156D45 /* UIImageViewExtension.swift in Sources */,
 				3BD2882526AFDDDD00156D45 /* UIViewExtensions.swift in Sources */,
 				3BFAE74626AB73E200BF8C47 /* ItemOnlyImage.swift in Sources */,
-				3B16A86226A9CC2D00A87DD8 /* Content.swift in Sources */,
 				3BFAE73826AB6F0800BF8C47 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,7 +679,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3267FGWQEP;
 				INFOPLIST_FILE = MyBluckbuster/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,7 +699,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3267FGWQEP;
 				INFOPLIST_FILE = MyBluckbuster/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,7 +719,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3267FGWQEP;
 				INFOPLIST_FILE = MyBluckbusterTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -717,7 +741,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3267FGWQEP;
 				INFOPLIST_FILE = MyBluckbusterTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -738,6 +762,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3267FGWQEP;
 				INFOPLIST_FILE = MyBluckbusterUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -758,6 +783,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3267FGWQEP;
 				INFOPLIST_FILE = MyBluckbusterUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

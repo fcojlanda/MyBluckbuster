@@ -19,16 +19,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E8224458-2017-4345-A8B4-49E9AA6C7E27"
+            uuid = "9AE8BF05-36CC-41CB-BAD6-C00C3E098630"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyBluckbuster/Architecture/Presenter/CustomViews/FilterControlView/FilterControlView.swift"
+            filePath = "MyBluckbuster/Architecture/Interactor/Managers/ServicesManager/ServicesManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "init(coder:)"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "getDetailContent(idContent:typeContent:whenFinish:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F03C7891-61F9-436B-A83C-282AC36E6F22"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyBluckbuster/Architecture/Interactor/Managers/ServicesManager/ServicesManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "getDetailContent(idContent:typeContent:whenFinish:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

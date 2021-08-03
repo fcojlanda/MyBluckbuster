@@ -8,8 +8,7 @@
 import UIKit
 
 protocol FilterControlDelegate{
-    func mainFilterSelection()
-    func secondaryFilterSelection()
+    func selection(content: TypeContent, filter: FitlerContent)
 }
 
 class FilterControlView: UIView {
@@ -20,11 +19,15 @@ class FilterControlView: UIView {
     @IBOutlet var heightSecundaryFilterView: NSLayoutConstraint!
     
     @IBAction func mainFilterControlAction(_ sender: Any) {
-        delegate?.mainFilterSelection()
+        let typeContent = TypeContent.mapTypeContent(index: mainFilterControl.selectedSegmentIndex)
+        let filterContent = FitlerContent.mapFilterContent(index: secundaryFilterControl.selectedSegmentIndex)
+        delegate?.selection(content: typeContent, filter: filterContent)
     }
     
     @IBAction func secundaryFilterControlAction(_ sender: Any) {
-        delegate?.secondaryFilterSelection()
+        let typeContent = TypeContent.mapTypeContent(index: mainFilterControl.selectedSegmentIndex)
+        let filterContent = FitlerContent.mapFilterContent(index: secundaryFilterControl.selectedSegmentIndex)
+        delegate?.selection(content: typeContent, filter: filterContent)
     }
     
     init(parentFrame frame: CGRect,mainFilters: [String], secundaryFilters: [String]? = nil){
@@ -43,6 +46,16 @@ class FilterControlView: UIView {
             }
         }
         
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "textSelectedFilter")]
+        mainFilterControl.setTitleTextAttributes(titleTextAttributes as [NSAttributedString.Key : Any], for: .selected)
+        secundaryFilterControl.setTitleTextAttributes(titleTextAttributes as [NSAttributedString.Key : Any], for: .selected)
+        if #available(iOS 13.0, *) {
+            mainFilterControl.selectedSegmentTintColor = UIColor(named: "selectedFilter")
+            secundaryFilterControl.selectedSegmentTintColor = UIColor(named: "selectedFilter")
+        } else {
+            mainFilterControl.tintColor = UIColor(named: "selectedFilter")
+            secundaryFilterControl.tintColor = UIColor(named: "selectedFilter")
+        }
     }
     
     required init?(coder: NSCoder) {

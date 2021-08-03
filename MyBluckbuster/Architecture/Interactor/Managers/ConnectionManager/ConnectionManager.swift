@@ -45,20 +45,8 @@ class ConnectionManager {
     func APIRequest (to url: String, of type: TypeRequest, headers: [String: String]? = nil, whenFinish: @escaping (Bool, Data?, Error?) -> Void){
         let session: URLSession = URLSession(configuration: .default)
         
-        var request = URLRequest(url: URL(string: "\(baseURL! + url)" + "?api_key=\(tokenApi!)")!)
-        
-        switch type {
-        case .GET:
-            request.httpMethod = "GET"
-            break
-        case .POST:
-            request.httpMethod = "POST"
-            break
-        case .PUT:
-            request.httpMethod = "PUT"
-            break
-        
-        }
+        var request = URLRequest(url: URL(string: "\(baseURL! + url.replacingOccurrences(of: "APIKEY", with: tokenApi!))")!)
+        request.httpMethod = type.description()
     
         if headers != nil {
             for header in headers! {

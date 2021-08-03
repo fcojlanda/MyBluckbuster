@@ -6,14 +6,15 @@
 //
 
 import Foundation
+import CoreData
 
 struct Movie: Codable {
-    var poster_path : String
+    var poster_path : String?
     var overview : String
     var genre_ids : [Int]
     var id : Int
     var original_language : String
-    var backdrop_path : String
+    var backdrop_path : String?
     var popularity : Double
     var vote_count : Int
     var vote_average : Double
